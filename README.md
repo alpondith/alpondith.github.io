@@ -1,3 +1,3 @@
-visit this site : alpondith.github.io
 
-[Visit](https://alpondith.github.io/)
+
+[Website](https://alpondith.github.io/)
