@@ -9,7 +9,7 @@ export default {
             targets: [
                 {
                     src: 'assets/resume.pdf',
-                    dest: 'docs/assets/resume.pdf', 
+                    dest: 'assets/', 
                 }
             ]
         }),
