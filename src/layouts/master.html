@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/svg+xml" href="assets/img/logo.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{{siteTitle}}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+           
+        </style>
+    </head>
+    <body class="overflow-x-hidden antialiased">
+        {% include "src/layouts/navbar.html" %}
+        {% block content %}{% endblock %}
+        {% include "src/layouts/footer.html" %}
+        <script type="module" src="assets/main.js"></script>
+    </body>
+</html>
