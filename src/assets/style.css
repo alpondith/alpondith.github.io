@@ -10,9 +10,31 @@
     font-family: "Quicksand", sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: "Archivo Black", sans-serif;
   }
+}
+
+@keyframes blobAnimation {
+
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 30% 40% 70% 60%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 60% 70% 40% 30%;
+  }
+}
+
+.blob {
+
+  animation: blobAnimation 8s infinite;
 }
 
 
