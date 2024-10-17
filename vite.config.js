@@ -1,8 +1,18 @@
 import nunjucks from "vite-plugin-nunjucks";
+import { viteStaticCopy } from 'vite-plugin-static-copy';
+
 
 export default {
     plugins: [
         nunjucks(),
+        viteStaticCopy({
+            targets: [
+                {
+                    src: 'assets/resume.pdf',
+                    dest: 'docs/assets/resume.pdf', 
+                }
+            ]
+        }),
     ],
     optimizeDeps: {
         include: ["nunjucks"],
