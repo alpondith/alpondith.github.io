@@ -1,51 +1,18 @@
-{% import "src/components/portfolio_card.html" as portfolio %}
-<section class="bg-gradient-to-br from-[#150638] via-black to-[#150638] flex items-center justify-center py-12 min-h-[100vh]">
+{% import "src/components/portfolio_card.html" as component %}
+{% import "src/datasets/portfolio_dataset.html" as data %}
+<section class="bg-gradient-to-bl from-[#150638] via-black to-[#150638] flex items-center justify-center py-12 min-h-[100vh] p-4">
     <div>
         <div class="mb-8 text-center">
-            <h1 class="mt-10 text-5xl font-bold text-transparent bg-gradient-to-r from-green-500 to-indigo-600 bg-clip-text">Flutter Portfolio</h1>
+            <h1 class="text-5xl font-bold text-transparent bg-gradient-to-r from-green-500 to-indigo-600 bg-clip-text"> Work Portfolio</h1>
             <p class="text-lg font-semibold text-transparent bg-gradient-to-r from-indigo-400 to-green-300 bg-clip-text">A showcase of my latest Flutter projects and accomplishments .</p>
         </div>
-        <div class="grid max-w-screen-lg grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {{ portfolio.portfolio_card("Righta", "A Flutter app for tracking right-hand traffic rules in Bangladesh", "#") }}
-            {{ portfolio.portfolio_card("Requireshop", "An e-commerce website built with Laravel", "#") }}
-            {{ portfolio.portfolio_card("Calculator", "A simple calculator app built with Flutter", "#") }}
-            {{ portfolio.portfolio_card("Weather App", "A weather app built with Flutter", "#") }}
-            {{ portfolio.portfolio_card("To-Do List App", "A to-do list app built with Flutter", "#") }}
-            {{ portfolio.portfolio_card("Simple Chatbot", "A simple chatbot built with Flutter", "#") }}
+        <div class="grid max-w-screen-lg grid-cols-1 gap-4 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            {% for item in data.list %}
+                {{ component.portfolio_card(item.name, item.description, item.url , item.keyword) }}
+            {% endfor %}
         </div>
     </div>
 </section>
 
-<section class="bg-gradient-to-tr from-[#150638] via-black to-[#150638] flex items-center justify-center py-12 min-h-[100vh]">
-    <div>
-        <div class="mb-8 text-center">
-            <h1 class="mt-10 text-5xl font-bold text-transparent bg-gradient-to-r from-green-500 to-indigo-600 bg-clip-text">Laravel Portfolio</h1>
-            <p class="text-lg font-semibold text-transparent bg-gradient-to-r from-indigo-400 to-green-300 bg-clip-text">A showcase of my latest Laravel projects and accomplishments .</p>
-        </div>
-        <div class="grid max-w-screen-lg grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {{ portfolio.portfolio_card("Blog", "A blog built with Laravel", "#") }}
-            {{ portfolio.portfolio_card("E-commerce", "An e-commerce website built with Laravel", "#") }}
-            {{ portfolio.portfolio_card("CMS", "A content management system built with Laravel", "#") }}
-            {{ portfolio.portfolio_card("Calculator", "A simple calculator app built with Laravel", "#") }}
-            {{ portfolio.portfolio_card("Weather App", "A weather app built with Laravel", "#") }}
-            {{ portfolio.portfolio_card("To-Do List App", "A to-do list app built with Laravel", "#") }}
-        </div>
-    </div>
-</section>
 
-<section class="bg-gradient-to-br from-[#150638] via-black to-[#150638] flex items-center justify-center py-12 min-h-[100vh]">
-    <div>
-        <div class="mb-8 text-center">
-            <h1 class="mt-10 text-5xl font-bold text-transparent bg-gradient-to-r from-green-500 to-indigo-600 bg-clip-text">Random Portfolio</h1>
-            <p class="text-lg font-semibold text-transparent bg-gradient-to-r from-indigo-400 to-green-300 bg-clip-text">Explore more of my Random projects and accomplishments.</p>
-        </div>
-        <div class="grid max-w-screen-lg grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {{ portfolio.portfolio_card("Project 1", "Description of project 1", "#") }}
-            {{ portfolio.portfolio_card("Project 2", "Description of project 2", "#") }}
-            {{ portfolio.portfolio_card("Project 3", "Description of project 3", "#") }}
-            {{ portfolio.portfolio_card("Project 4", "Description of project 4", "#") }}
-            {{ portfolio.portfolio_card("Project 5", "Description of project 5", "#") }}
-            {{ portfolio.portfolio_card("Project 6", "Description of project 6", "#") }}
-        </div>
-    </div>
-</section>
+
