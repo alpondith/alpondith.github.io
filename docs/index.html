@@ -5,7 +5,7 @@
         <link rel="icon" type="image/svg+xml" href="/assets/img/photo.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Alpondith</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        
         <style>
            
         </style>
@@ -21,19 +21,21 @@
         
     
 <!-- BEGIN HERO SECTION -->
-<section class="bg-gradient-to-tr from-[#150638] via-black to-[#150638] min-h-[100vh] flex items-center justify-center p-4">
-    <!-- Introduction section -->
+<section class="section">
     <div>
+        <!-- Avatar & Intro -->
         <div>
             <div class="flex justify-center">
-                <div class="inset-0 bg-gray-800 h-96 w-96 blob">
-                    <img src="/assets/img/photo.png" class="mx-auto border-solid rounded-full w-80 border-zinc-900" alt="Avatar"/>
+                <div class="inset-0 bg-slate-950 h-80 w-80 avatar-animation">
+                    <img src="/assets/img/photo.png" class="w-64 mx-auto border-solid rounded-full border-zinc-900" alt="Avatar"/>
                 </div>
             </div>
-            <h1 class="mt-10 text-6xl font-bold text-center text-transparent bg-gradient-to-r from-green-600 to-indigo-500 bg-clip-text">Hi, I'm AL IMRAN</h1>
-            <p class="text-2xl font-semibold text-center text-transparent bg-gradient-to-r from-indigo-400 to-green-300 bg-clip-text">A Software Engineer Expert in Flutter and Laravel</p>
+            <div class="mt-10 text-center">
+                <h1 class="section-title">Hi, I'm AL IMRAN</h1>
+                <p class="section-subtitle">A Software Engineer Expert in Flutter and Laravel</p>
+            </div>
         </div>
-
+        <!-- End Avatar & Intro -->
         <!-- Social Media Links -->
         <div class="flex flex-wrap items-center justify-center mt-10 space-x-2">
             <!-- Medium -->
@@ -101,28 +103,27 @@
             </a>
         </div>
         <!--End Social media links -->
-        <div class="flex justify-center mt-8">
-            <a href="/assets/resume.pdf" download="resume.pdf">
-                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-100 via-yellow-100 to-red-100 group-hover:from-red-100 group-hover:via-yellow-100 group-hover:to-red-100 dark:text-white dark:hover:text-gray-900  ">
-                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        Download Resume
-                    </span>
-                </button>
-            </a>
-        </div>
+        <!--Download Resume -->
+        <a class="flex justify-center mt-8" href="/assets/resume.pdf" download="resume.pdf">
+            <div class="p-3 text-center w-60 card">
+                <p class="text-caption">Download Resume</p>
+            </div>
+        </a>
+        <!--End Download Resume -->
     </div>
+</div>
 </section>
 <!-- HERO SECTION END -->
     
 
-<section class="bg-gradient-to-br from-[#150638] via-black to-[#150638] flex items-center justify-center  min-h-[100vh] p-4">
+<section class="section">
     <div>
         <div class="text-center">
-            <h1 class="text-5xl font-bold text-transparent bg-gradient-to-r from-green-500 to-indigo-600 bg-clip-text">Work Experience</h1>
-            <p class="text-lg font-semibold text-transparent bg-gradient-to-r from-indigo-400 to-green-300 bg-clip-text">A timeline of work experience with various companies and organizations.</p>
+            <h1 class="section-title">Work Experience</h1>
+            <p class="section-subtitle">A timeline of work experience with various companies and organizations.</p>
         </div>
         <div class="w-full px-2 mt-12 sm:max-w-screen-lg sm:mx-auto sm:px-0">
-            <div class="relative text-sm antialiased font-semibold text-gray-700">
+            <div class="relative">
                 <div class="absolute hidden w-1 h-full transform -translate-x-1/2 bg-gradient-to-t from-green-600 via-indigo-400 to-indigo-600 sm:block left-1/2"></div>
                 
                     
@@ -132,10 +133,10 @@
         <div class="flex items-center justify-start w-full mx-auto">
             <div class="w-full sm:w-1/2 sm:pr-8">
                 <a href="https://insoulit.com" target="_blank">
-                    <div class="p-4 text-center text-gray-300 transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800">
-                        <p class="font-bold">Feb 2024 - Present</p>
-                        <h3 class="text-xl font-bold">INSOUL IT</h3>
-                        <p>Software Engineer</p>
+                    <div class="card">
+                        <p class="text-caption">Feb 2024 - Present</p>
+                        <h3 class="text-title">INSOUL IT</h3>
+                        <p class="text-subtitle">Software Engineer</p>
                     </div>
                 </a>
             </div>
@@ -158,10 +159,10 @@
         <div class="flex items-center justify-end w-full mx-auto">
             <div class="w-full sm:w-1/2 sm:pl-8">
                 <a href="https://buildclerk.com" target="_blank">
-                    <div class="p-4 text-center text-gray-300 transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800">
-                        <p class="font-bold">Jun 2022 - Jan 2024</p>
-                        <h3 class="text-xl font-bold">BuildClerk</h3>
-                        <p>Software Engineer - Remote</p>
+                    <div class="card">
+                         <p class="text-caption">Jun 2022 - Jan 2024</p>
+                        <h3 class="text-title">BuildClerk</h3>
+                        <p class="text-subtitle">Software Engineer - Remote</p>
                     </div>
                 </a>
             </div>
@@ -184,10 +185,10 @@
         <div class="flex items-center justify-start w-full mx-auto">
             <div class="w-full sm:w-1/2 sm:pr-8">
                 <a href="https://youth.gazipur.gov.bd" target="_blank">
-                    <div class="p-4 text-center text-gray-300 transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800">
-                        <p class="font-bold">Mar 2022 - May 2022</p>
-                        <h3 class="text-xl font-bold">Jubo Unnayan</h3>
-                        <p>DBMS Trainer</p>
+                    <div class="card">
+                        <p class="text-caption">Mar 2022 - May 2022</p>
+                        <h3 class="text-title">Jubo Unnayan</h3>
+                        <p class="text-subtitle">DBMS Trainer</p>
                     </div>
                 </a>
             </div>
@@ -210,10 +211,10 @@
         <div class="flex items-center justify-end w-full mx-auto">
             <div class="w-full sm:w-1/2 sm:pl-8">
                 <a href="https://genexinfosys.com" target="_blank">
-                    <div class="p-4 text-center text-gray-300 transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800">
-                        <p class="font-bold">Sep 2021 - Feb 2022</p>
-                        <h3 class="text-xl font-bold">Genex Infosys</h3>
-                        <p>Flutter Trainer</p>
+                    <div class="card">
+                         <p class="text-caption">Sep 2021 - Feb 2022</p>
+                        <h3 class="text-title">Genex Infosys</h3>
+                        <p class="text-subtitle">Flutter Trainer</p>
                     </div>
                 </a>
             </div>
@@ -236,10 +237,10 @@
         <div class="flex items-center justify-start w-full mx-auto">
             <div class="w-full sm:w-1/2 sm:pr-8">
                 <a href="https://insoulit.com" target="_blank">
-                    <div class="p-4 text-center text-gray-300 transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800">
-                        <p class="font-bold">Sep 2019 - Feb 2021</p>
-                        <h3 class="text-xl font-bold">INSOUL IT</h3>
-                        <p>Junior Software Engineer</p>
+                    <div class="card">
+                        <p class="text-caption">Sep 2019 - Feb 2021</p>
+                        <h3 class="text-title">INSOUL IT</h3>
+                        <p class="text-subtitle">Junior Software Engineer</p>
                     </div>
                 </a>
             </div>
@@ -261,35 +262,99 @@
 </section>
     
 
-<section class="bg-gradient-to-bl from-[#150638] via-black to-[#150638] flex items-center justify-center py-12 min-h-[100vh] p-4">
+<section class="py-48 section">
     <div>
         <div class="mb-8 text-center">
-            <h1 class="text-5xl font-bold text-transparent bg-gradient-to-r from-green-500 to-indigo-600 bg-clip-text"> Work Portfolio</h1>
-            <p class="text-lg font-semibold text-transparent bg-gradient-to-r from-indigo-400 to-green-300 bg-clip-text">A showcase of my latest Flutter projects and accomplishments .</p>
+            <h1 class="section-title"> Work Portfolio</h1>
+            <p class="section-subtitle">A showcase of my latest Flutter projects and accomplishments .</p>
         </div>
-        <div class="grid max-w-screen-lg grid-cols-1 gap-4 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div class="grid max-w-screen-lg grid-cols-1 gap-8 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             
                 
-    <a href="https://insoulit.com" class="block" target="_blank">
-        <div class="p-4 text-center text-gray-300 transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800">
-            <h2 class="text-2xl font-semibold ">BuildClerk</h2>
-            <p class="mt-2 font-medium ">BuildClerk is a construction employee management system featuring a mobile app for both Android and iOS, built with Flutter, and powered by a Laravel backend.</p>
-            <div class="mt-4">
+    <a href="https://buildclerk.com" class="block" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">BuildClerk</h2>
+            <p class="mt-2 text-regular">BuildClerk is a construction employee management system featuring a mobile app for both Android and iOS, built with Flutter, and powered by a Laravel backend.</p>
+            <div class="mt-3">
                 
-                    <span class="inline-block px-3 py-1 m-1 text-sm font-bold border-2 border-gray-700 rounded-full">
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
                         Flutter
                     </span>
                 
-                    <span class="inline-block px-3 py-1 m-1 text-sm font-bold border-2 border-gray-700 rounded-full">
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
                         Getx Pattern
                     </span>
                 
-                    <span class="inline-block px-3 py-1 m-1 text-sm font-bold border-2 border-gray-700 rounded-full">
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
                         Laravel
                     </span>
                 
-                    <span class="inline-block px-3 py-1 m-1 text-sm font-bold border-2 border-gray-700 rounded-full">
-                        Filament php
+            </div>
+        </div>
+    </a>
+
+            
+                
+    <a href="https://youtu.be/SZbYDnWnMzE?si=WTJgGzWgfbFwSj-o" class="block" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">Require Shop</h2>
+            <p class="mt-2 text-regular">Riquire Shop is a used phone &amp; laptop reselling portal, featuring a mobile app for both Android and iOS, built with Flutter and powered by a Laravel backend.</p>
+            <div class="mt-3">
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Flutter
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Laravel
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Bootstrap
+                    </span>
+                
+            </div>
+        </div>
+    </a>
+
+            
+                
+    <a href="https://tabpole.dev" class="block" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">Tabpole</h2>
+            <p class="mt-2 text-regular">Tadpole is an open source package documentation portal that delivers clear, concise guides and examples to streamline development and improve productivity.</p>
+            <div class="mt-3">
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Documentation
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Flutter
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Docker
+                    </span>
+                
+            </div>
+        </div>
+    </a>
+
+            
+                
+    <a href="https://timelogg.ing" class="block" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">TimeLogging</h2>
+            <p class="mt-2 text-regular">TimeLogging is a software solution designed to track freelance work, facilitating accurate payment calculations and efficient project management for freelancers.</p>
+            <div class="mt-3">
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Product Testing
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Linux Platform Testing
                     </span>
                 
             </div>
@@ -299,25 +364,125 @@
             
                 
     <a href="https://insoulit.com" class="block" target="_blank">
-        <div class="p-4 text-center text-gray-300 transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800">
-            <h2 class="text-2xl font-semibold ">INSOUL IT</h2>
-            <p class="mt-2 font-medium ">A landing page showcasing comprehensive company details, including portfolio, testimonials, team information, services offered, and more for a complete overview.</p>
-            <div class="mt-4">
+        <div class="card">
+            <h2 class=" text-title">INSOUL IT</h2>
+            <p class="mt-2 text-regular">A landing page showcasing comprehensive company details, including portfolio, testimonials, team information, services offered, and more for a complete overview.</p>
+            <div class="mt-3">
                 
-                    <span class="inline-block px-3 py-1 m-1 text-sm font-bold border-2 border-gray-700 rounded-full">
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
                         Tailwind CSS
                     </span>
                 
-                    <span class="inline-block px-3 py-1 m-1 text-sm font-bold border-2 border-gray-700 rounded-full">
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
                         Vite
                     </span>
                 
-                    <span class="inline-block px-3 py-1 m-1 text-sm font-bold border-2 border-gray-700 rounded-full">
-                        Custom Animation
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Nunjucks
                     </span>
                 
-                    <span class="inline-block px-3 py-1 m-1 text-sm font-bold border-2 border-gray-700 rounded-full">
-                        Nunjucks
+            </div>
+        </div>
+    </a>
+
+            
+                
+    <a href="https://techbirddigital.co.uk" class="block" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">TechBird Digital</h2>
+            <p class="mt-2 text-regular">A website showcasing TechBird Digital, a London based digital marketing agency, including details, portfolio, testimonials,  services offered, and complete overview.</p>
+            <div class="mt-3">
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Wordpress
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Elementor
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Plugin
+                    </span>
+                
+            </div>
+        </div>
+    </a>
+
+            
+                
+    <a href="https://hbbma.com" class="block" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">HBBMA</h2>
+            <p class="mt-2 text-regular">A website showcasing HBBMA, a brick manufacturing company specializing in high-quality masonry services for residential and commercial projects, with overviews.</p>
+            <div class="mt-3">
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Laravel
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        MD Bootstrap
+                    </span>
+                
+            </div>
+        </div>
+    </a>
+
+            
+                
+    <a href="https://youtu.be/5YpeW8qG4xc?si=epIdS1cFqOAu8BqZ" class="block" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">Ecommerce Mars</h2>
+            <p class="mt-2 text-regular">This Ecommerce website includes all essential features for online shopping, along with a comprehensive admin panel for easy management and seamless updates.</p>
+            <div class="mt-3">
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Laravel
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Bootstrap
+                    </span>
+                
+            </div>
+        </div>
+    </a>
+
+            
+                
+    <a href="https://youtu.be/AqFUsS5lVoA?si=FWIlLCYXyI-yghGY" class="block" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">Blog Earth</h2>
+            <p class="mt-2 text-regular">Blog Earth is a comprehensive blog website featuring essential functionalities and optimized SEO options, with an admin panel for easy content management.</p>
+            <div class="mt-3">
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Laravel
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        MD Bootstrap
+                    </span>
+                
+            </div>
+        </div>
+    </a>
+
+            
+                
+    <a href="https://youtu.be/y8GL7LuC89I?si=pg3W7xDzQGGg0vu2" class="block" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">Restaurant Mercury</h2>
+            <p class="mt-2 text-regular">This small Restaurant Management System allows admin to control the entire website from the admin panel. Built with Laravel and MDbootstrap with an admin panel.</p>
+            <div class="mt-3">
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        Laravel
+                    </span>
+                
+                    <span class="inline-block px-4 py-1 m-1 text-gray-300 rounded-full bg-slate-800 text-caption">
+                        MD Bootstrap
                     </span>
                 
             </div>
