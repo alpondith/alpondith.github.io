@@ -1,10 +1,10 @@
 {% import "src/components/portfolio_card.html" as component %}
 {% import "src/datasets/portfolio_dataset.html" as data %}
-<section class="bg-gradient-to-bl from-[#150638] via-black to-[#150638] flex items-center justify-center py-12 min-h-[100vh] p-4">
+<section class="section">
     <div>
         <div class="mb-8 text-center">
-            <h1 class="text-5xl font-bold text-transparent bg-gradient-to-r from-green-500 to-indigo-600 bg-clip-text"> Work Portfolio</h1>
-            <p class="text-lg font-semibold text-transparent bg-gradient-to-r from-indigo-400 to-green-300 bg-clip-text">A showcase of my latest Flutter projects and accomplishments .</p>
+            <h1 class="text-title"> Work Portfolio</h1>
+            <p class="text-subtitle">A showcase of my latest Flutter projects and accomplishments .</p>
         </div>
         <div class="grid max-w-screen-lg grid-cols-1 gap-4 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             {% for item in data.list %}
