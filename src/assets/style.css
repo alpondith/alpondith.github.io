@@ -32,7 +32,8 @@
 @layer components {
 
   .section {
-    @apply bg-gradient-to-bl from-[#150638] via-black to-[#150638] flex items-center justify-center py-12 min-h-[100vh] p-4;
+
+    @apply bg-gradient-to-r from-slate-950  via-gray-900  to-slate-950 flex flex-col items-center justify-center py-12 min-h-[100vh] p-4;
   }
 
   .section-title {
@@ -48,7 +49,7 @@
   }
 
   .card {
-    @apply p-4 antialiased text-center transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg on-hover ;
+    @apply p-4 antialiased text-center transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg on-hover;
   }
 
   .text-title {
@@ -76,8 +77,8 @@
 
 /* Avatar Animation */
 @keyframes avatar-animation {
-  
-  0%{
+
+  0% {
     border-radius: 65% 45% 35% 75% / 35% 45% 75% 65%;
   }
 
@@ -94,3 +95,4 @@
 .avatar-animation {
   animation: avatar-animation 8s infinite;
 }
+
