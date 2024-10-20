@@ -4,7 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* ******************************************************************************** */
+/* ************************************Base Styles********************************* */
+/* ******************************************************************************** */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -24,56 +26,71 @@
   }
 }
 
+/* ******************************************************************************** */
+/* *************************************COMPONENTS********************************* */
+/* ******************************************************************************** */
 @layer components {
 
-  .section{
+  .section {
     @apply bg-gradient-to-bl from-[#150638] via-black to-[#150638] flex items-center justify-center py-12 min-h-[100vh] p-4;
   }
-  
-  .text-title {
+
+  .section-title {
     @apply text-4xl font-bold text-transparent md:text-5xl bg-gradient-to-r from-green-500 to-indigo-600 bg-clip-text;
   }
 
-  .text-subtitle {
+  .section-subtitle {
     @apply text-lg font-bold text-transparent sm:text-xl bg-gradient-to-r from-indigo-400 to-green-300 bg-clip-text;
   }
 
-  .card{
-    @apply p-4 antialiased text-center text-gray-300 transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800;
+  .on-hover {
+    @apply text-gray-300 hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800;
   }
-  
-  .card-title {
+
+  .card {
+    @apply p-4 antialiased text-center transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg on-hover ;
+  }
+
+  .text-title {
     @apply text-xl font-bold;
   }
 
-  .card-subtitle {
+  .text-subtitle {
     @apply text-base font-bold;
   }
 
-  .card-caption-text {
+  .text-caption {
     @apply text-sm font-bold;
   }
 
-  .card-text {
+  .text-regular {
     @apply text-base font-semibold;
   }
-  
+
 }
 
-@keyframes blobAnimation {
+/* ******************************************************************************** */
+/* *************************************ANIMATIONS********************************* */
+/* ******************************************************************************** */
 
-  0%,
-  100% {
-    border-radius: 60% 40% 30% 70% / 30% 40% 70% 60%;
+
+/* Avatar Animation */
+@keyframes avatar-animation {
+  
+  0%{
+    border-radius: 65% 45% 35% 75% / 35% 45% 75% 65%;
   }
 
   50% {
     border-radius: 30% 60% 70% 40% / 60% 70% 40% 30%;
   }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 30% 40% 70% 60%;
+  }
+
 }
 
-.blob {
-
-  animation: blobAnimation 8s infinite;
+.avatar-animation {
+  animation: avatar-animation 8s infinite;
 }
-
