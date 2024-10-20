@@ -1,11 +1,11 @@
 {% import "src/components/hero_icon.html" as hero %}
 <!-- BEGIN HERO SECTION -->
 <section class="section">
-    <!-- Introduction section -->
     <div>
+        <!-- Avatar & Intro -->
         <div>
             <div class="flex justify-center">
-                <div class="inset-0 bg-gray-800 h-80 w-80 avatar-animation">
+                <div class="inset-0 bg-slate-950 h-80 w-80 avatar-animation">
                     <img src="assets/img/photo.png" class="w-64 mx-auto border-solid rounded-full border-zinc-900" alt="Avatar"/>
                 </div>
             </div>
@@ -14,6 +14,7 @@
                 <p class="section-subtitle">A Software Engineer Expert in Flutter and Laravel</p>
             </div>
         </div>
+        <!-- End Avatar & Intro -->
         <!-- Social Media Links -->
         <div class="flex flex-wrap items-center justify-center mt-10 space-x-2">
             <!-- Medium -->
@@ -42,15 +43,14 @@
             </a>
         </div>
         <!--End Social media links -->
-        <div class="flex justify-center mt-8">
-            <a href="/assets/resume.pdf" download="resume.pdf">
-                <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-100 via-yellow-100 to-red-100 group-hover:from-red-100 group-hover:via-yellow-100 group-hover:to-red-100 dark:text-white dark:hover:text-gray-900  ">
-                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        Download Resume
-                    </span>
-                </button>
-            </a>
-        </div>
+        <!--Download Resume -->
+        <a class="flex justify-center mt-8" href="/assets/resume.pdf" download="resume.pdf">
+            <div class="p-3 text-center w-60 card">
+                <p class="text-caption">Download Resume</p>
+            </div>
+        </a>
+        <!--End Download Resume -->
     </div>
+</div>
 </section>
 <!-- HERO SECTION END -->

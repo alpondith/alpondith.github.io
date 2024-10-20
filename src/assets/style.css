@@ -32,7 +32,6 @@
 @layer components {
 
   .section {
-
     @apply bg-gradient-to-r from-slate-950  via-gray-900  to-slate-950 flex flex-col items-center justify-center py-12 min-h-[100vh] p-4;
   }
 
@@ -45,11 +44,11 @@
   }
 
   .on-hover {
-    @apply text-gray-300 hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800;
+    @apply text-slate-400 hover:bg-gradient-to-br hover:from-red-100 hover:via-yellow-100 hover:to-red-100 hover:text-gray-800;
   }
 
   .card {
-    @apply p-4 antialiased text-center transition duration-300 ease-in-out bg-transparent border-2 border-gray-700 rounded-lg shadow-lg on-hover;
+    @apply p-5 antialiased text-center transition duration-300 ease-in-out bg-transparent bg-black border shadow-2xl border-gray-950 rounded-xl on-hover;
   }
 
   .text-title {
