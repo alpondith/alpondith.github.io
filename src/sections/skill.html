@@ -1,0 +1,18 @@
+{% import "src/components/skill_card.html" as component %}
+{% import "src/datasets/skill_dataset.html" as data %}
+<section class="py-48 section">
+    <div>
+        <div class="mb-8 text-center">
+            <h1 class="section-title">Professional Skills</h1>
+            <p class="section-subtitle">A showcase of my skills and expertise as a software engineer.</p>
+        </div>
+        <div class="grid max-w-screen-lg grid-cols-1 gap-8 mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            {% for item in data.list %}
+                {{ component.skill_card(item.title, item.keyword) }}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
