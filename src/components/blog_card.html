@@ -1,0 +1,8 @@
+{% macro blog_card(title, description, url) %}
+    <a href="{{ url }}" class="block my-8" target="_blank">
+        <div class="card">
+            <h2 class=" text-title">{{ title }}</h2>
+            <p class="mt-2 text-regular">{{ description }}</p>
+        </div>
+    </a>
+{% endmacro %}

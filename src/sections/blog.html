@@ -1,0 +1,15 @@
+{% import "src/components/blog_card.html" as component %}
+{% import "src/datasets/blog_dataset.html" as data %}
+<section class="py-48 section">
+    <div>
+        <div class="mb-8 text-center">
+            <h1 class="section-title">Hobby Pursuits</h1>
+            <p class="section-subtitle">A Curated Collection of My Top Blog Articles and Tutorials.</p>
+        </div>
+        <div class="max-w-screen-lg mx-auto mt-12">
+            {% for item in data.list %}
+                {{ component.blog_card(item.title, item.description, item.url) }}
+            {% endfor %}
+        </div>
+    </div>
+</section>
