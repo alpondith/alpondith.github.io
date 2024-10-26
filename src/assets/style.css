@@ -25,6 +25,26 @@
   h6 {
     font-family: "Archivo Black", sans-serif;
   }
+
+  /* width */
+  ::-webkit-scrollbar {
+    @apply w-2
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-inherit bg-slate-950
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-indigo-700 rounded-2xl
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-indigo-500
+  }
 }
 
 /* ******************************************************************************** */
